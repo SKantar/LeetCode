@@ -1,3 +1,6 @@
+# 980. Unique Paths III
+# https://leetcode.com/problems/unique-paths-iii/
+
 class Solution:
     steps = ((-1, 0), (0, 1), (1, 0), (0, -1))
     def _dfs(self, i, j, N, M, grid, visited, cnt, total, ans):
@@ -31,9 +34,3 @@ class Solution:
 
         self._dfs(startI, startJ, N, M, grid, visited, 0, total, result)
         return result[0]
-
-
-if __name__ == "__main__":
-    print(Solution().uniquePathsIII([[1, 0, 0, 0], [0, 0, 0, 0], [0, 0, 2, -1]]))
-    print(Solution().uniquePathsIII([[1, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 2]]))
-    print(Solution().uniquePathsIII([[0, 1], [2, 0]]))
