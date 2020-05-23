@@ -16,7 +16,6 @@ class StockSpanner:
         self.stack.append((price, self.curr))
         return ans
 
-
 # Your StockSpanner object will be instantiated and called as such:
 # obj = StockSpanner()
 # param_1 = obj.next(price)
