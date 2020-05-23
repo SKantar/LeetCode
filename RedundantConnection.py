@@ -29,5 +29,4 @@ class Solution:
 
             if x == y:
                 return [u, v]
-
             self.union(parent, rank, x, y)
