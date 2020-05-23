@@ -28,4 +28,5 @@ class Solution:
         else:
             if self._equal(curr, ref):
                 return True
+
         return False
