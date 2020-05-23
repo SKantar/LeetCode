@@ -18,5 +18,3 @@ class Solution:
                 dp[i][j] = min(dp[i][j - 1], dp[i - 1][j], dp[i - 1][j - 1]) + 1
                 total += dp[i][j]
         return total
-
-
