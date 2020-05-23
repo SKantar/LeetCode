@@ -1,3 +1,6 @@
+# 212. Word Search II
+# https://leetcode.com/problems/word-search-ii/
+
 class Node:
     def __init__(self):
         self.chils = dict()
@@ -46,15 +49,3 @@ class Solution:
             for j in range(M):
                 self._dfs(i, j, N, M, board, visited, trie, result)
         return list(result)
-
-
-if __name__ == "__main__":
-    board = [
-      ['o', 'a', 'a', 'n'],
-      ['e', 't', 'a', 'e'],
-      ['i', 'h', 'k', 'r'],
-      ['i', 'f', 'l', 'v']
-    ]
-    words = ["oath", "pea", "eat", "rain"]
-
-    print(Solution().findWords(board, words))
